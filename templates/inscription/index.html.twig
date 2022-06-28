@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Around | S'inscrire{% endblock %}
+
+{% block content %}
+      <!-- Background image-->
+      <div class="d-none d-md-block position-absolute w-50 h-100 bg-size-cover" style="top: 0; right: 0; background-image: url(img/account/signin-img.jpg);"></div>
+      <!-- Actual content-->
+      <section class="container d-flex align-items-center pt-3 pb-3 pb-md-4" style="flex: 1 0 auto;">
+        <div class="w-100 pt-3">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 offset-lg-1">
+              <!-- Sign in view-->
+              <div class="view show" id="signin-view">
+                <h1 class="h2">S'inscrire</h1>
+                <p class="fs-ms text-muted mb-4"> L'enregistrement prend moins d'une minute mais vous donnent tout le contrôle sur vos instructions</p>
+
+                <form class="needs-validation" >
+                  <div class="mb-3">
+                    <input class="form-control" type="text" placeholder="Nom complet" required>
+                  </div>
+                  <div class="mb-3">
+                    <input class="form-control" type="text" placeholder="Email" required>
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="password-toggle w-100">
+                      <input class="form-control" type="password" placeholder="Mot de passe" required>
+                      <label class="password-toggle-btn" aria-label="Show/hide password">
+                        <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="password-toggle w-100">
+                      <input class="form-control" type="password" placeholder="Confirmer mot de passe" required>
+                      <label class="password-toggle-btn" aria-label="Show/hide password">
+                        <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary d-block w-100" type="submit">S'inscrire</button>
+                  <p class="fs-sm pt-3 mb-0">Vous avez déjà un compte ? <a href='signin-illustration.html' class='fw-medium'>Se connecter</a></p>
+                </form>
+              </div>
+              <div class="border-top text-center mt-4 pt-4">
+                <p class="fs-sm fw-medium text-heading">Nous joindre par </p><a class="btn-social bs-facebook bs-outline bs-lg mx-1 mb-2" href="#"><i class="ai-facebook"></i></a><a class="btn-social bs-twitter bs-outline bs-lg mx-1 mb-2" href="#"><i class="ai-twitter"></i></a><a class="btn-social bs-instagram bs-outline bs-lg mx-1 mb-2" href="#"><i class="ai-instagram"></i></a><a class="btn-social bs-google bs-outline bs-lg mx-1 mb-2" href="#"><i class="ai-google"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+{% endblock %}

@@ -1,0 +1,144 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Around Bank | Calculatrice {% endblock %}
+
+{% block content %}
+    <!-- Rounded image -->
+    <img src=" {{asset('assets/img/calculatrice.jpg')}}" alt="Square image"> <br> <br>
+
+    <div class="container">
+         <strong><h2> Calculatrice  </h2> </strong> 
+          <p>      La souscription d’un prêt immobilier implique la capacité de rembourser le montant des mensualités sur une durée relativement longue (jusqu’à 25 ans). <br>
+             Calculer le montant de la mensualité de crédit permet ainsi de définir la faisabilité de votre projet.
+
+            Faire une simulation de prêt immobilier permet également de connaître votre capacité d’emprunt, à savoir le montant du prêt qui pourra vous être accordé. Si les mensualités s’avèrent trop élevées, vous devrez alors réduire le montant emprunté.
+            
+            En clair, cet outil de simulation vous offre la possibilité de mieux vous projeter dans votre achat immobilier et de commencer à rechercher des biens immobiliers.
+             </p> 
+    </div>  <br> 
+    
+    
+    <!-- Calculatrice -->
+    <form action="" class="container" id="app">
+      <div class="row">
+        <!-- Montant -->
+        <label class="form-label" for="format-card-cvc">Montant du prêt :</label> 
+        <div class="input-group mb-3 col-md-4">
+          <span class="input-group-text">
+            <i class="ai-dollar-sign"></i>
+          </span> 
+          <input type="text" class="form-control" placeholder="Amount" v-model="montant">
+          <span class="input-group-text">.00</span>
+        </div>
+
+
+        <!-- Mois -->
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="format-card-cvc">Nombre de mois :</label>
+          <input class="form-control" type="text" id="format-card-cvc" data-format="cvc" placeholder="000" v-model="NbreMois">
+        </div>
+
+        <!-- Taux -->
+        <div class="mb-3 col-md-6">
+          <label class="form-label" for="format-card-cvc">Taux :</label>
+          <div class="input-group">
+            <input class="form-control" type="text" placeholder="Readonly input here..." readonly v-model="taux">
+            <span class="input-group-text">%</span>
+          </div>
+        </div>  
+
+        <!-- resultat Total -->
+        <div class="form-floating mb-3" >
+          <input class="form-control" type="text" id="fl-text" placeholder=" Your name" v-model="Total">
+          <label for="fl-text" style="margin-left: 15px!important;">  Le cout total de votre crédit sera de :  </label>
+        </div> <br> 
+        <!-- resultat  -->
+        <div class="form-floating mb-3">
+           <input class="form-control" type="text" id="fl-text" placeholder=" Your name" v-model="parMois">
+          <label for="fl-tex" style="margin-left: 15px!important;">  Votre mensualité sera de  :  </label>
+        </div> <br> 
+      </div>
+    </form> <br>
+
+
+    <div class="container">
+          <h3> Quels sont les éléments qui impactent la mensualité d’un crédit ? </h3>   
+          <ul class="list-unstyled">
+            <li> 
+              Le montant de vos mensualités inclut les différents frais qui composent le coût total de votre crédit immobilier, à savoir : <br>
+            </li>
+              <ul>
+                <li> Le montant emprunté ; </li>
+                <li> Les intérêts selon le taux de prêt fixé par votre banque ; </li>
+                <li> L’assurance emprunteur, là encore selon le taux d’assurance défini par votre niveau de risque ;</li>
+                <li> Les frais de notaire ;</li>
+                <li>Les éventuels frais d’agence immobilière ;</li>
+                <li>Les frais de dossier.</li>
+                <li> Naturellement, la durée du crédit aura, elle aussi, un véritable impact sur le calcul d’une mensualité de prêt immobilier.</li>
+              </ul>
+          </ul>    <br>
+
+          <h3>Calculs mensuels : comprendre en quelques questions</h3> 
+        <div class="accordion container" id="accordionExample">
+            <!-- Item 1-->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Le montant de mes mensualités sera-t-il constant ? 
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Si vous avez souscrit un prêt immobilier à taux fixe, les remboursements mensuels seront effectivement fixes. Si vous avez souscrit un autre crédit, tel que le prêt à taux zéro (PTZ), il est nécessaire de faire un lissage de prêt pour que votre mensualité soit constante du début à la fin de votre crédit immobilier. Nous vous invitons à utiliser notre simulateur de lissage de prêt pour rembourser différents prêts immobiliers.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2-->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Comment modifier le montant de mes mensualités de remboursement ?
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Vous remboursez chaque mois des mensualités qui commencent à peser sur votre budget ? Si certains contrats de prêt incluent dans leurs conditions une clause de modularité de crédit immobilier, cela n’est pas systématique. La plupart du temps, changer les mensualités d’un emprunt immobilier a un coût. C’est pourquoi il est conseillé de ne pas atteindre le taux d’endettement maximal afin de conserver un reste à vivre plus élevé.
+            </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                Puis-je calculer moi-même le montant de mes mensualités ?            </button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Le simulateur de prêt immobilier semble plus indiqué pour faire un calcul de prêt immobilier. En effet, le montant des mensualités de crédit tient compte de différents éléments, il ne suffit pas de diviser le montant emprunté par le nombre de mois de remboursement pour connaître le montant de vos mensualités. La simulation de prêt immobilier étant gratuite, ne vous privez pas d’une telle opportunité.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4-->
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Comment réduire le montant de mes mensualités ?            </button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                La solution peut se trouver dans le rachat de crédit par une autre banque vous offrant un meilleur taux et une assurance de prêt immobilier plus attractive. Notre comparateur vous permet de trouver des solutions pour réduire vos mensualités de prêt. SI vous avez souscrit plusieurs crédits immobiliers (résidence principale et investissement locatif par exemple), le regroupement de crédits peut aussi être une solution. Vous allongez la durée de vos prêts pour réduire le montant remboursé chaque mois.
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> <br> <br>
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,380 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Around Bank | Emprunt {% endblock %}
+
+{% block content %}
+   <!-- About-->
+      <section class="bg-secondary">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4 mt-3 mt-md-0 py-5 py-md-0">
+              <h2 class="text-lg-nowrap pb-2 text-center text-md-start">Obtenir un prêt financier ?</h2>
+              <p class="pb-2 text-center text-md-start">Nous donnons ici les informations élémentaires concernant l'obtention d'un prêt et de manière général. Les procédures elles par contre diffèrent d'une banque à l'autre et la notre vous sera dite une fois le contact fait.</p>
+              <ul class="list-unstyled fs-sm pb-1 d-table mx-auto mx-md-0">
+                <li class="d-flex mb-2"><i class="ai-check-circle text-success fs-lg me-3"></i><span>Qui est éligible à un prêt ?</span></li>
+                <li class="d-flex mb-2"><i class="ai-check-circle text-success fs-lg me-3"></i><span>Les frais de dossier</span></li>
+                <li class="d-flex mb-2"><i class="ai-check-circle text-success fs-lg me-3"></i><span>La rémunération du notaire</span></li>
+              </ul>
+            </div>
+            <div class="col-md-8">
+              <div class="parallax ms-auto" style="max-width: 757px;"><img class="d-block" src="{{ asset('assets/img/demo/marketing-seo/about-img/lines.png')}}" alt="Lines">
+                <div class="parallax-layer" style="z-index: 2;" data-depth="0.15"><img src="{{ asset('assets/img/demo/marketing-seo/about-img/image.png')}}" alt="Image"></div>
+                <div class="parallax-layer" style="z-index: 3;" data-depth="0.3"><img src="{{ asset('assets/img/demo/marketing-seo/about-img/badge.png')}}" alt="Badge"></div>
+                <div class="parallax-layer" data-depth="0.25"><img src="{{ asset('assets/img/demo/marketing-seo/about-img/shape.png')}}" alt="Shape"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <br> <br>
+
+    <div class="container">
+      <h3> Qui est éligible à un prêt ? </h3> 
+       <h5 class="container"> Quels sont les critères d’obtention d’un crédit bancaire ? </h5> 
+      <div>
+        Vous avez besoin de réaliser un emprunt bancaire mais n’êtes pas certain de remplir les conditions exigées par les banques. En effet, pour donner leur accord de prêt, les établissements bancaires procèdent à une analyse du risque-client. Chaque établissement détermine ses propres conditions d’acceptation mais il est tout de même possible d’identifier les critères les plus récurrents.
+        Les facteurs pris en compte par les établissements de crédit :
+
+        <!-- Flush accordion. Use this when you need to render accordions edge-to-edge with their parent container -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+          <!-- Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">1 - Des revenus fixes et réguliers</button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Pour obtenir un prêt, il faut pouvoir présenter des revenus fixes et réguliers. La stabilité est un critère essentiel pour les banques. Un contrat en CDI ou un emploi dans la fonction publique sont des atouts. Pour les indépendants, les chefs d’entreprises et les professions libérales c’est l’ancienneté qui sera prise en compte. Les CDD, contrats en intérim ou stages ne sont généralement pas pris en considération.
+              </div>
+          </div>
+
+          <!-- Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">2 - Un taux d’endettement faible</button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Le taux d’endettement est le rapport entre les revenus nets du foyer et le total des mensualités de crédits. Il se calcule de la manière suivante : Taux d’endettement = (Total des mensualités X 100) / salaire net Exemple pour une personne avec un salaire net à 1500€ et 300€ de prêt mensuel : (300x100)/1500=20% En France, les établissements de crédits considèrent à 33% le taux d’endettement maximum. Dans cet exemple le total des mensualités de crédit ne doit donc pas excéder 500€/mois. Parfois, le taux d’endettement accordé peut être supérieur au 33%, tout dépend du reste à vivre.
+              </div>
+          </div>
+
+          <!-- Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">3 - Un reste à vivre suffisant</button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="flush-collapseThree" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Le reste à vivre représente ce qu’il reste chaque mois à un ménage charges fixes et mensualités de crédit déduites (factures, impôts, transport…). Chaque banque peut appliquer sa propre recette. On peut cependant partir du mode de calcul suivant Reste à vivre = total des ressources (salaires, retraites, 70% des revenus fonciers)-total des charges fixes (loyers, impôts, pensions alimentaires)-total des crédits. Le reste à vivre est très regardé par les organismes de crédit. Pour donner un ordre d’idée, le reste à vivre minimum pour une personne seule est de 750€, 900€ pour un couple sans enfant auquel s’ajoute 150€ par enfant.
+                </div>
+          </div> 
+          <!-- Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">4 - L’âge</button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="flush-collapseFour" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Il est aujourd’hui possible d’emprunter au-delà de 65 ans mais les conditions sont draconiennes. Le coût de l’assurance est alors très élevé, et entraîne parfois un dépassement du taux d’usure en vigueur, avec pour conséquence le refus de financement bancaire. De même, avant 25 ans, il est très compliqué d’obtenir un crédit, même pour un crédit à la consommation.
+              </div>
+          </div><!-- Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">5 - L’apport personnel</button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="flush-collapseFive" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">L’apport personnel n’est pas un facteur indispensable pour obtenir un prêt bien qu’il soit souvent demandé 10% d’apport dans le cas d’un prêt immobilier. Plus le reste à vivre est important, plus les banques sont susceptibles d’accorder un prêt sans apport.
+              </div>
+          </div><!-- Item -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">6 - Une situation financière saine</button>
+            </h2>
+            <div class="accordion-collapse collapse show" id="flush-collapseSix" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Les banques n’accordent pas de crédit aux personnes fichées. Elles interrogent systématiquement la Banque de France pour s’assurer qu’aucun fichage n’est en cours. Il existe plusieurs types de fichage : Le FICP : fichier national des incidents de remboursement des crédits aux particuliers Le FCC : fichier central de chèques L’inscription à un fichier banque de France, quelle que soit la nature de l’interdit bancaire, est le motif principal des refus de financement des banques.
+              </div>
+          </div>
+        </div>
+      </div>  <br> 
+
+        <h5 > Comment obtenir un financement ? </h5> 
+      <div class="container">
+        Dans un premier temps rapprochez-vous de plusieurs banques et comparez les offres ou adressez-vous à un courtier qui vous soumettra la meilleure proposition après interrogation de ses partenaires bancaires.
+      </div> <br>
+       <h5 > Quelle solution, en cas de refus bancaire ? </h5> 
+      <div class="container"> 
+        Il est possible de trouver un financement sans passer par une banque. Aujourd’hui, il existe plusieurs solutions alternatives au circuit bancaire classique : le prêt entre particuliers par exemple encadré par la loi peut être une option. 
+        Il est possible également d’opter pour le financement participatif via différentes plateformes de crowdfunding qui permettent aujourd’hui de proposer tout type de projet. <br>
+        Pour les sommes comprises entre 300 et 5000€, il existe le microcrédit mais attention cette solution est généralement utilisée par des personnes en situation financière difficile, l’objectif du microcrédit étant de faire évoluer positivement cette situation. <br>
+        Enfin, si vous vous êtes propriétaire d’un bien immobilier, le Portage immobilier est peut-être la solution… En effet, le Portage immobilier est une solution de financement innovante qui permet aux propriétaires, particuliers comme professionnels, de dégager des liquidités grâce à la valeur de leur bien immobilier tout en restant chez eux.
+        Le Portage immobilier repose sur les critères suivants : - Le montant du besoin, qui doit être inférieur ou égal à 65% de la valeur du bien - L’état du bien (résidence principale, secondaire, bien loué, SCI, murs ou bureaux commerciaux…) - La localité du bien : il doit être situé au sein d’une zone avec un marché immobilier actif
+        L’objectif du Portage est donc de permettre à tous les propriétaires : entrepreneurs, commerçants, artisans, chômeurs, retraités, fichés bancaire... de trouver un financement en rendant liquide son patrimoine immobilier. Il s’agit ici de « monétiser » ou rendre « liquide » son patrimoine.</div>
+        
+        <br>
+        <h3> Frais de dossier </h3> 
+        <p>
+            Lorsque vous avez recours à un crédit pour acheter un bien, plusieurs dépenses sont liées à cet emprunt. Les frais de dossier en font partie comme l’assurance ou la garantie. Combien coûtent-ils ? Comment les négocier ? Nous faisons le point.
+         </p>
+
+             <!-- Horizontal card layout -->
+        <div class=" container">
+            <div class="card card-horizontal">
+                <div class="card-img-top" style="background-image: url({{ asset('assets/img/carlos-muza-hpjSkU2UYSU-unsplash.jpg') }});"></div>
+                <div class="card-body">
+                <h5 class="card-title"> Un incontournable du prêt immobilier ?</h5>
+                <p class="card-text fs-sm">Vous avez votre bien et votre banque est en pleine étude de votre dossier. C’est un service qui demande temps et rigueur afin de vous proposer une offre qui puisse vous correspondre le mieux.
+                    Qui dit service dit rémunération. Votre banque va donc vous demander des frais de dossier. Ces frais peuvent varier d'une banque à l'autre selon plusieurs critères comme le profil de l'emprunteur par exemple. Cependant, ils sont généralement compris entre 500 € et 1 500 € et rémunèrent la banque pour le service d’étude et de montage de votre demande de crédit. Les frais de dossier vont alors couvrir les coûts inhérents au traitement de votre dossier.
+                    Sachez aussi que les frais de dossier font partie de votre offre de prêt immobilier, ce qui signifie que vous pouvez les négocier. Bien évidemment Around Bank s’est penché sur le sujet et vous présente tout en détail, tout en vous apportant des conseils !
+                    Vous pouvez aussi utiliser notre simulateur personnalisé pour chiffrer précisément le coût de votre emprunt.
+                    </p>
+                <a href="calculatrice.html" class="btn btn-sm btn-primary">Je simule le coût de mon emprunt</a>
+                </div>
+            </div>  <br> 
+        </div>
+        <!-- Basic accordion -->
+        <div class="accordion container" id="accordionExample">
+
+            <!-- Item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        À quoi correspondent les frais de dossier ? </button>
+                </h2>
+                <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">Recherche du meilleur financement, analyse de vos revenus et dépenses, calcul du risque de non-remboursement ou encore montage du prêt… votre conseiller bancaire va prendre du temps pour étudier votre dossier emprunteur. Il doit notamment s’assurer de la cohérence de votre projet et de votre profil. En amont, vous pouvez faire votre propre simulation de prêt pour établir de premières estimations.
+                        Ces frais de dossier servent donc à rémunérer la banque pour le traitement administratif de votre demande de prêt immobilier. Ils couvrent également la gestion courante lors de la phase de remboursement. <br><br>
+                        <!-- Success alert -->
+                        <div class="alert d-flex alert-success" role="alert">
+                            <i class="ai-check-circle fs-xl me-3"></i> 
+                            <div>Bon à savoir : <br>
+                                Les frais de dossier sont intégrés dans le calcul du TAEG (Taux Annuel Effectif Global) de votre prêt immobilier. Cela peut donc vous servir pour comparer plus efficacement les propositions de plusieurs banques.
+                            </div>
+                        </div>
+                        Les frais de dossier rémunèrent la banque pour l’analyse et le traitement de votre demande. L’étude de votre dossier prend du temps puisque les banques vérifient tous les documents (pas de raison de vous les demander sinon). Elle s’assure par exemple de la cohérence entre les fiches de paye, les relevés de compte et les déclarations d’impôts.
+                        Les banques veulent donc rémunérer le service d'analyse de votre demande de prêt. Les frais de dossier vont couvrir les coûts inhérents au traitement de votre dossier. En général, ils sont compris entre 500 € et 1 500 €.
+                        Le Taux Annuel Effectif Global (TAEG), indicateur du coût total de votre financement, les prend en compte. La banque a l’obligation de vous le fournir lorsque vous signez votre crédit. Il est calculé à partir du taux nominal, des frais de dossier, de l’assurance, des frais de garantie, des éventuels frais de courtage, etc. Le calcul du TAEG ne prend cependant pas en compte les frais de notaire. Vous pouvez en revanche calculer vos frais de notaire grâce à notre simulateur.
+                        Bon plan <br> <br>
+                        
+                        <h5>Pourquoi dois-je payer ces frais de dossier ?</h5> 
+                        Les frais de dossier sont considérés comme une source de revenus à court terme. En payant ces frais, vous payez le temps qu’ont passé vos différents interlocuteurs sur l’analyse et le montage de votre demande de crédit immobilier.
+                        <br> <br>
+                        <!-- DAnger alert -->
+                        <div class="alert d-flex alert-danger" role="alert">
+                            <i class="ai-alert-triangle fs-xl me-3"></i>
+                            <div>Attention : <br>
+                                Détrompez vous, passer par un courtier immobilier ne vous permet pas d'économiser sur les frais de dossier. Ils sont à dissocier des frais de courtage que vous allez lui régler en échange de ces services.
+                        
+                            </div> 
+                        </div>
+
+                        <h5>Quand payer les frais de dossier pour un crédit immobilier ?</h5>
+                        En général, vous payez les frais de dossier lorsque vous remboursez votre première échéance. Si vous le souhaitez, vous pouvez également utiliser votre apport personnel pour régler ces frais en amont. À vous de voir ce qui vous convient le mieux et de trouver un accord avec votre banque.
+                        Notez que la phase de discussion avec un établissement bancaire ne vous engage pas ! Si vous ne signez pas votre offre de prêt chez elle, la banque ne peut pas vous demander de régler de frais de dossier, même si elle a commencé à étudier votre profil. <br> <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item -->
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Quel est le montant des frais de dossier pour un emprunt ?</button>
+                </h2>
+                <div class="accordion-collapse collapse show" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">Le montant des frais de dossier est calculé en fonction du coût de votre crédit. En général, ils varient entre 0,5 et 1,5% du montant total emprunté. Mais la plupart des banques imposent un montant minimum et/ou un montant plafond. Ainsi, pour un même emprunt de 200 000 €, certains grands établissements bancaires proposent des frais de dossier à 500€, 900€ ou 2000€.
+                        Ces chiffres restent des estimations, n’hésitez pas à vous rapprocher de votre conseiller bancaire pour en savoir plus.  <br><br>
+                        <!-- DAnger alert -->
+                        <div class="alert d-flex alert-danger" role="alert">
+                            <i class="ai-alert-triangle fs-xl me-3"></i>
+                            <div>Attention : <br>
+                                Avant de signer votre offre de prêt et de payer ces frais de dossier, vérifiez que le montant soit annoncé en TTC (et non HT).                       
+                            </div>
+                        </div>     
+                        <h5>Frais de dossier : que se passe-t-il si le prêt n’aboutit pas ?</h5>
+                        S’il est logique de payer les frais de dossier lorsque votre prêt a été accepté, il est légitime de se poser la question dans le cas inverse. Lorsque vous sollicitez plusieurs banques mais que vous signez votre crédit immobilier dans une seule, quels sont les frais de dossier à régler ?
+                        Tout dépend où vous en êtes dans votre demande de crédit immobilier, Si vous n’avez pas encore signé d’offre, aucun frais de dossier ne pourra vous être facturé. Si vous ne répondez pas à cette proposition, elle s’annule automatiquement au bout de 30 jours sans frais.
+                        Si vous avez accepté l’offre de prêt mais que la vente n’est finalement pas conclue, la banque est en droit de vous facturer des frais d’étude de dossier lorsqu’ils sont indiqués dans la proposition financière. Ils sont plafonnés à 0,75 % du montant du prêt dans la limite de 150 euros <br> <br>
+                        Si la banque refuse de vous accorder un crédit immobilier, elle ne vous demande généralement pas de payer de frais.
+                        Le paiement des frais de dossier se fait, généralement, lorsque vous remboursez votre première échéance. Vous pouvez également payer les frais de dossier directement avec votre apport. A vous de voir avec la banque ce qui vous arrange le plus.
+
+
+                          
+                    </div> 
+                </div>
+            </div>    
+
+                <!-- Item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Comment sont facturés les frais de dossier ?</button>
+                </h2>
+                <div class="accordion-collapse collapse show" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Pour toute demande de prêt immobilier, les banques prévoient les frais de dossier pour l’étude et le montage. S’ils ne sont pas toujours précisés lors de l’entretien avec votre conseiller bancaire, ils sont bien indiqués sur le document de synthèse remis obligatoirement aux emprunteurs.
+                        Aucune réglementation n’a été mise en place pour fixer le montant de ces frais de dossier. Chaque banque est donc libre de décider du montant idéal. On constate toutefois une certaine homogénéité au niveau des banques traditionnelles. Ces frais se situent en moyenne entre 0,80% et 1,20 % du montant emprunté. Un montant minimum est souvent mis en place, tout comme un maximum pour éviter des frais élevés lors d’emprunts de sommes importantes
+                        Lorsque des promotions sont en cours, ces frais de dossier peuvent être offerts. Il s’agit pour les banques d’attirer certains profils d’emprunteurs tels que les primo-accédants, les personnes qui accèdent pour la première fois à la propriété depuis au moins 2 ans et qui peuvent par exemple profiter de cet avantage pour tout crédit immobilier souscrit.
+                         <br> <br> 
+                         <!-- Light alert -->
+                        <div class="alert d-flex alert-info" role="alert">
+                            <i class="ai-alert-circle fs-xl me-3"></i>
+                            <div>Bon à savoir : <br>
+                                Certains prêts peuvent bénéficier de frais de dossier réduits voire d’aucun frais de dossier. C’est le cas du PTZ, par exemple, qui ne comporte pas de frais de dossier, et du Prêt Accession Sociale, pour lequel les frais de dossier ne peuvent pas excéder 500 €.
+                            </div>
+                        </div>
+                        Les frais de dossier peuvent varier selon votre projet immobilier. En effet, ces frais peuvent augmenter si votre dossier est plus compliqué, par exemple si vous empruntez à plus de deux via une SCI ou pour un investissement locatif. Chaque dossier est différent.
+                        Around ank propose des frais de dossier largement négociés. En effet, nos conseillers, des experts du crédit immobilier, analysent vos dossiers de demande de prêt immobilier au préalable. Ils aident largement les banques, c’est l’une des raisons pour lesquelles elles acceptent de réduire ces frais.
+                        Chez Around Bank, nous passons du temps à comprendre votre projet immobilier afin de vous conseiller au mieux et d’obtenir les meilleures conditions de prêt. Vous pouvez faire une simulation afin de connaître précisément le taux et les conditions de crédit immobilier que nous vous proposons. <br> <br>
+                        <h5> Peut-on négocier ces frais de dossier ? </h5>
+                        Vous pouvez négocier les frais de dossier en faisant jouer la concurrence. En effet, si vous correspondez aux profils que recherche la banque, elle peut accepter de réduire ces frais. Cependant, assurez-vous que votre profil soit assez intéressant et que la banque ait tout intérêt à appliquer ce geste commercial.
+                        Vous l’avez compris, les frais de dossier font partie intégrante de votre offre de prêt. Bonne nouvelle, vous pouvez donc les négocier, au même titre que les modalités de remboursement ou les frais de remboursement anticipé !
+                        En fonction de votre profil emprunteur, la banque se montrera plus ou moins compréhensive. Sachez que deux éléments peuvent jouer en votre faveur : la simplicité et la qualité de votre dossier.
+                        <ul class="list-unstyled">
+                            <li> 
+                                Concrètement, si vous faites partie des dossiers dits « faciles », vous aurez une marge de manœuvre plus importante pour négocier. C’est le cas notamment si :
+                            </li>
+                              <ul>
+                                <li> Vous êtes en couple ;</li>
+                                <li> Vous êtes en CDI ; </li>
+                                <li> Vous avez au moins 15% d’apport ;</li>
+                                <li> Votre historique bancaire est équilibré ;</li>
+                                <li> Vous avez un faible taux d’endettement (moins de 33%). </li>
+                              </ul>
+                        </ul> 
+                        Globalement, ces éléments rassurent les banques ! Les emprunteurs ayant de solides garanties sont donc considérés comme des profils « faciles ».
+                        La domiciliation de vos comptes épargne dans la banque prêteuse ou bien la souscription d’une assurance habitation auprès de celle-ci pourraient également faciliter la négociation.
+                        <br> <br> Si ou êtes dans ce cas, vous pourrez demander une réduction voire une suppression des frais de dossier. Notez qu’à certaines périodes de l’année, les banques proposent d’elles-mêmes la suppression de ces frais.
+                        <br> <br> A l’inverse, dans certaines situations, votre dossier peut être considéré comme plus “complexe” à traiter : si vous êtes chef d’entreprise ou en CDD, si vous n’avez pas d’apport, ou encore si vous achetez en société (SCI)... Dans ce cas, le conseiller pourrait refuser la négociation des frais de dossier en estimant que le traitement de votre projet lui prendra plus de temps.
+                        Là encore, le niveau de difficulté de traitement d’un dossier reste un critère subjectif. En fonction des banques, et du profil emprunteur qu’elles ciblent, la prise en charge de votre dossier sera jugée comme plus ou moins difficile.
+                        <br> <br> Dans tous les cas, ans tous les cas, pour faciliter la négociation des frais de dossier, vous pouvez également faire appel à un courtier immobilier. Dans ce cas, vous ne devrez rien à la banque mais vous rémunérez directement ce professionnel. Un autre avantage sera que, grâce au courtier en prêt immobilier, vous pourrez obtenir de meilleures conditions et faire des économies.
+                        Chez Around Bank, nous avons établi des partenariats avec La Centrale de Financement et MonEmprunt.com, deux courtiers en prêts immobiliers, pour vous accompagner au mieux dans votre projet immobilier.
+                        <br><br> La part des frais de dossier dans votre crédit immobilier
+                        Tout d’abord, avant de vouloir négocier toutes les lignes de votre crédit, sachez que vous pouvez connaître les frais de dossier grâce aux guides tarifaires des banques. On vous fournit un petit récapitulatif à la fin de l’article !
+                        Si on prend la rémunération totale d’une banque sur un prêt immobilier, les frais de dossier ne représentent pas une part importante à côté des frais de garantie, d’assurance emprunteur et des intérêts. Ce n’est donc pas le plus difficile à négocier.
+                        Avant de les négocier, rappelez-vous que mettre en concurrence les banques vous permettra d’avoir plus d’arguments et surtout des éléments de comparaison. Toutefois, sachez que toutes les banques ne ciblent pas toutes le même type de client ou de projet. Si vous correspondez à leurs critères, elles n’hésiteront pas à vous donner envie d’aller chez elles. En général, c’est un petit geste commercial qu’elles ne refusent pas.
+                        De plus, en fonction de la simplicité de votre dossier, elles peuvent vous proposer des frais plus ou moins élevés.
+                        <br><br>
+                         Comment savoir si son dossier est simple alors ? Par exemple, si vous êtes un couple qui cherche à acheter sa première résidence principale avec 20 % d’apport, votre dossier est plutôt facile à traiter. En revanche, un achat immobilier en SCI nécessite l’analyse de plus de pièces (statut de la SCI entre autres) et certaines banques facturent des frais de dossier plus élevés dans ce cas.
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div> <br><br>
+    
+    <div class="container">
+
+        <h3 class="container" > La rémunération du notaire</h3> 
+        <!-- Background image parallax -->
+        <div class="jarallax bg-dark py-7" data-jarallax data-speed="0.3">
+          <span class="position-absolute top-0 start-0 w-100 h-100 bg-black" style="opacity: .35;"></span>
+          <div class="jarallax-img" style="background-image: url({{ asset('assets/img/money-g736a1b75b_1920.jpg') }});"></div>
+          <div class="container position-relative zindex-2 py-5 py-sm-7 text-center">
+            <h2 class="h1 text-light mb-0"> La rénumération du notaire</h2>
+          </div>
+        </div> <br><br>
+        Le calcul du tarif proportionnel des notaires
+
+        Les émoluments qui reviennent au notaire pour une vente immobilière sont calculés à l’aide d’un tarif qui est proportionnel au prix de vente du bien, avec quatre tranches. Cette grille tarifaire a été revue à la baisse une première fois de 1,4 % en 2016 puis une nouvelle fois depuis le 1er janvier 2021. Cette fois, les émoluments notariés ont baissé d'environ 1,9 %. Ils sont calculés selon le barème suivant :
+        <br> <br>
+        Tranches de prix : Pourcentage à appliquer : Montant à ajouter : <br>
+        <ul>
+          <li>Jusqu'à 6.500 € = <strong> 3,870 % </strong></li>
+          <li>De 6.501 à 17.000 € = <strong>1,596 % </strong>soit 147,81 € </li>
+          <li>De 17.001 à 60.000 € = <strong>1,064 % </strong>soit 238,25 € </li>
+          <li>Au-dessus de 60.000 € = <strong>0,799 %  </strong>soit 397,25 € </li>
+        </ul> 
+
+        Démonstration pour l'achat d'un bien immobilier d'une valeur de 200 000 euros : <br> 
+        <div class="container">
+          ( 6 500 € - 0 €) x 3,870% = 251,55 € <br>
+          ( 17 000 € - 6 500 €) x 1,596% = 167,58 € <br>
+          ( 60 000 € - 17 000 €) x 1,064% = 457,52‬ € <br>
+          ( 200 000 € - 60 000 €) x 0,799% = 1 118,6‬  € <br>
+          251,55 € + 167,58 € + 457,52 € + 1 118,6‬ € = 1 995,25‬ € 
+        </div>
+        <br> <br>
+
+        Le montant des émoluments de vente à régler au notaire pour l'acquisition d'un bien d'une valeur de 200 000 euros s'élève à 1 995,25 euros soit une économie de 1,9% par rapport à la somme à acquitter avec le précédent barème. Depuis le 1er mai 2016, les notaires peuvent accorder des remises à leurs clients pour les ventes qui dépassent 150 000 euros. Le taux maximal de cette remise est de 10% et celle-ci est calculée sur la tranche supérieure à 150 000 euros.
+
+        Pour l'achat d'un bien de 200 000 euros, la remise maximale ne peut pas dépasser 39,95‬ euros (10% x (200 000 € - 150 000 €) x 799%) soit 2% du total des émoluments.
+
+        Il faut savoir que, si le notaire décide d'accorder une remise, quel que soit le taux pour lequel il aura opté, il est obligé de l'accorder à tous ses clients pour lesquels la transaction dépasse 100 000 euros. À noter aussi que pour les petites ventes immobilières, les émoluments du notaire sont plafonnés à 10% de la valeur du bien. Ils ne peuvent toutefois pas être inférieurs à la somme de 90 euros. La baisse des frais de notaire n'est effective que pour les émoluments des prestations effectuées depuis le 1er mai 2020, date d'entrée en vigueur de l'arrêté du 28 février 2020 fixant les tarifs réglementés des notaires.
+
+        Aux émoluments de vente à proprement parler s'ajoutent les émoluments que doit verser l'acheteur au notaire pour les démarches annexes qu'il aura accomplies. L'acquéreur devra également s'acquitter des débours, c'est-à-dire rembourser au notaire les sommes qu'il aura avancées pour faire intervenir d'autres professionnels si la vente le nécessitait.
+
+        <br> <br>
+
+        TVA sur émoluments : ajouter 20% du résultat obtenu ci-dessus. <br>
+        Le « montant à ajouter » permet un calcul rapide sans avoir besoin de faire un calcul tranche par tranche
+
+        Les frais de notaire correspondent aux frais d'acquisition appliqués au moment d'un achat immobilier. Ils incluent la rémunération du notaire, les débours et les droits de mutation. Le montant des frais de notaire va dépendre de plusieurs critères comme le type de bien immobilier ou sa localisation. Un arrêté du 25 février 2022 a modifié à la marge les tarifs réglementés des notaires, avec un objectif de taux de résultat moyen qui est passé de 30% à 32,7%. Ce taux sert de base de calcul pour déterminer la "rémunération raisonnable" que peuvent obtenir les notaires.
+        <br> <br>
+        <strong><h5> Qu'appelle-t-on "frais de notaire" ?</h5> </strong>
+
+        Les frais de notaire correspondent aux frais d'acquisition appliqués au moment d'un achat immobilier. Ces frais de notaire s'additionnent au prix du bien immobilier et sont – essentiellement – des impôts payés à l'État. Ils comprennent, outre la rémunération du notaire, les débours et les droits de mutation, aussi appelés "droits d'enregistrement".
+        <br> <br>
+        <strong><h5>
+        Qui paye les frais de notaire lors d'une vente ? </h5> </strong>
+
+        Les frais de notaire demeurent à la charge de l'acquéreur du bien immobilier, c'est-à-dire qu'il doit impérativement les anticiper au moment de son achat immobilier. Le pourcentage appliqué au prix du bien immobilier pour calculer les frais de notaire vont dépendre du type de bien immobilier.
+
+        2 à 3% dans le neuf7 à 8% dans l'ancienPourquoi payer les frais de notaire lors d'un achat immobilier ?
+
+        Lors d'un achat immobilier, le notaire joue un rôle important pour rédiger des actes, organiser la signature des deux parties et rendre la vente opposable aux tiers, c'est-à-dire incontestable aux yeux de tous. À ce titre, l'acquéreur doit lui verser des honoraires qui font partie – avec les droits de mutation et les débours – des frais de notaire à payer lors d'un achat immobilière.
+        <br> <br>
+        <strong><h5>
+        Comment calcule-t-on les frais de notaire ? </h5> </strong>
+
+        Afin d'anticiper le montant des frais de notaire, il est nécessaire d'ajouter 8% au prix d'achat d'un bien immobilier ancien et 3% au prix d'acquisition d'un bien neuf qui n'a jamais été occupé. Ces pourcentages correspondent à un calcul approximatif du montant des frais de notaire : droits de mutation, débours et rémunération du notaire.
+        <br> <br>
+        <strong><h5>
+        Quel est le barème des frais de notaire ? </h5> </strong> 
+
+        <div class="container">
+          <strong> Comment les frais de notaire se calculent-ils ? <br> </strong>
+          Les émoluments que perçoit le notaire dans le cadre d'une vente immobilière, plus gros poste de dépenses au sein des frais de notaire derrière les droits de mutation, sont fixés par l'État. Le barème des frais de notaire est composé de 4 tranches de valeur de biens auxquelles est appliqué un pourcentage dégressif. <br>
+ 
+          <br>
+         <strong> Comment simuler ses frais de notaire ? <br> </strong>
+ 
+         Il existe de nombreuses possibilités sur Internet pour effectuer une simulation des frais de notaire. Il est possible d'anticiper ses frais de notaire depuis le site de la Chambre des notaires de Paris, par exemple.
+         <br> <br>
+         <strong>Quel est le pourcentage des frais de notaire ? <br> </strong>
+ 
+         Les frais de notaire correspondent à un pourcentage appliqué au prix du bien immobilier qui définit le montant des frais de notaire. Le montant des frais de notaire s'élèvent jusqu'à 8% du prix d'achat mais ce pourcentage appliqué va dépendre de plusieurs factures qui entrent en compte dans le calcul du montant des frais de notaire.
+ 
+         La nature du bien immobilierLa vente éventuelle de mobilierLa localisation <br>
+         <br>
+         <strong>Quels sont les frais de notaire dans l'ancien ? <br> </strong>
+ 
+         Un bien immobilier "ancien" est un bien immobilier déjà existant qui a été occupé. Les frais de notaire dans l'ancien sont plus élevés que dans le neuf. Les droits de mutation – qui en constituent la plus grande partie – représentent entre 5% et 6% du prix d'achat du bien immobilier en fonction des départements. Les droits de mutation ou droits d'enregistrement constituent la majeure partie des frais de notaires qui incluent également la rémunération du notaire et les débours. Ils se composent de plusieurs taxes.
+ 
+         La taxe communale : 1,2% du prix d'acquisition du bien immobilierLa taxe départementale dont le taux a été relevé à 4,5% sauf en Indre, en Isère et à Mayotte où il est de 3,8%La taxe collectée pour l'État qui équivaut à 2,37% du montant de la taxe départementale
+ 
+         Presque tous les départements ont procédé à une hausse des taux de mutation qui pèsent pour l'essentiel des frais de notaire à régler au moment d'une vente immobilière. Cette hausse des taux de mutation a été proposée par l'État, générant ainsi une augmentation des frais de notaire. Seuls trois départements ont conservé des taux de mutation limités à 3,8% : l'Indre, l'Isère et Mayotte.
+ 
+         Aux frais de mutation calculés, il est nécessaire d'ajouter la rémunération du notaire et les débours qui font augmenter le montant total des frais de notaire.
+         <br>  <br>
+         <strong>Quels sont les frais de notaire dans le neuf ? <br> </strong>
+ 
+         Les frais de notaire sont moins élevés dans le neuf puisque les droits destinés au Trésor public, qui composent la plus grande partie des frais de notaire, sont allégés pour les immeubles neufs. Depuis 2011, les acquéreurs d'un logement neuf doivent payer uniquement la taxe départementale et la taxe collectée pour l'État.
+ 
+         Taxe départementale : 0,7% du prix d'achatTaxe collectée pour l'État : 2,37% du montant de la taxe départementale
+         Les acquéreurs d'un bien immobilier neuf doivent également anticiper le montant de la rémunération du notaire et les débours.
+         <br>  <br>
+         <strong>Quels sont les frais de notaire sur un terrain ? <br> </strong>
+         Le barème des droits de mutation pour calculer les frais de notaire pour un terrain à bâtir sont similaires aux droits de mutation des biens immobiliers anciens, c'est-à-dire que les frais de notaire pour acheter un terrain constructible sont compris entre 7% et 8% du prix d'acquisition.
+ 
+         La taxe communale : 1,2%
+         La taxe départementale : 4,5% ou 3,8% dans certains départements
+         La taxe collectée pour l'État : 2,37% du montant de la taxe départementale
+         Quels sont les frais de notaire dans le cadre d'une succession ?
+         À l'instar de la vente immobilière, la succession fait l'objet de taxes, débours et honoraires. Le montant à régler dépend des actes à accomplir et de la valeur des biens en question.
+         <br>  <br>
+         <strong>Comment faire baisser les frais de notaire ? <br> </strong>
+         Les frais de notaire représentent un budget important lors d'un achat immobilier. Afin de bénéficier de frais de notaire réduits, il est conseillé de privilégier l'achat d'un bien immobilier neuf. se diriger vers un bien neuf puisque les taxes destinées au Trésor public passent de 5% à 1% du prix d'acquisition du bien immobilier.
+ 
+         Outre l'achat dans le neuf, il existe d'autres astuces pour réduire la note à acquitter. Par exemple, il est possible de déclarer que le prix de vente de la maison ou de l'appartement tient compte de la valeur de biens mobiliers. En effet, les frais de notaire sont calculés uniquement sur la valeur du bien immobilier lui-même.
+ 
+         Le notaire peut également pratiquer une remise sur ses émoluments. Cette ristourne peut atteindre jusqu'à 20% et s'appliquera à la part d'émolument calculée sur les tranches d'assiettes supérieures ou égales à 100 000 euros. Dans certaines situations (bureaux, logements sociaux, pacte Dutreil...), la réduction peut atteindre 40% de la fraction d'émolument calculée sur les tranches supérieures ou égales à 10 millions d'euros.
+        </div>
+      </div> <br>
+  </main> 
+{% endblock %}
